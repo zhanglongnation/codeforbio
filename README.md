@@ -1,4 +1,4 @@
-# codeforbio
+# Code for bio
 ## interproscan.py
 the file is used to extarct pfam and panther annotation from interproscan result. Its defaults python version is 3.x. Using "-h" for help. The filtered results will be shown on the screen
 
