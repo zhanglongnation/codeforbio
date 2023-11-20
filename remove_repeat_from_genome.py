@@ -4,8 +4,8 @@ for line in filein:
     if line.startswith(">"):
         name=line[1:]
     else:
-        a=[substr.start() for substr in re.finditer("[A-Z]+",line)]
-        b=[substr.end() for substr in re.finditer("[A-Z]+",line)]
+        a=[substr.start() for substr in re.finditer("[ATCG]+",line)]
+        b=[substr.end() for substr in re.finditer("[ATCG]+",line)]
         length=len(a)
         for i in range(0,length):
             if b[i] -a[i] > 10:
